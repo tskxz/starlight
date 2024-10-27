@@ -31,7 +31,10 @@ const Application = ({ title, questions }: props) => {
         meta={{
           title: "Email",
           placeholder: "Enter your email",
-          value: "", // Initial value can be empty
+          value: "",
+          type: "text",
+          maxLength: 250,
+          disabled: false,
         }}
       />
 
