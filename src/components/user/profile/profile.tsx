@@ -10,7 +10,7 @@ const Profile = () => {
         github="Andrewk1"
         discord="Andrewk1"
         status="Returning"
-        profilePic="/assets/placeholderpic.png"
+        profilePic="/assets/placeholderpic.webp"
         projects={["ACM", "UCR", "testtestesttest"]}
       />
       <Information />
