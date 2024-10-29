@@ -28,9 +28,8 @@ const Radio = ({ meta }: { meta: RadioInput }) => {
               value={String(option)}
               id={`option-${option}`}
               className="hidden"
-            >
-              <Button>{option}</Button>
-            </RadioGroupItem>
+            />
+            <Button onClick={() => {}}>{option}</Button>
           </div>
         ))}
       </RadioGroup>
