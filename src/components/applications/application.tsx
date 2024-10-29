@@ -1,3 +1,5 @@
+"use client";
+
 import Button from "@/components/global/button";
 import Radio from "@/components/global/inputs/radio";
 import Textarea from "@/components/global/inputs/textarea";

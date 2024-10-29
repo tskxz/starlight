@@ -1,3 +1,5 @@
+"use client";
+
 import { RadioInput } from "@/types/questions";
 import Button from "../button";
 

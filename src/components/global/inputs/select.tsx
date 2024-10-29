@@ -1,3 +1,5 @@
+"use client";
+
 import { SelectInput } from "@/types/questions";
 import Button from "../button";
 

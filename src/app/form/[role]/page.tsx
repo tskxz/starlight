@@ -1,3 +1,5 @@
+"use client";
+
 import Button from "@/components/global/button";
 import Text from "@/components/global/inputs/text";
 import { roles } from "@/forms/roles/index";
