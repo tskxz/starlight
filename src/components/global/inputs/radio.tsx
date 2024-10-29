@@ -1,3 +1,5 @@
+"use client";
+
 import { RadioInput } from "@/types/questions";
 import Button from "../button";
 
@@ -8,7 +10,9 @@ const Radio = ({ meta }: { meta: RadioInput }) => {
     <div>
       <p>{title}</p>
       {options.map((option, index) => (
-        <Button key={index}>{option}</Button>
+        <Button key={index} onClick={() => {}}>
+          {option}
+        </Button>
       ))}
     </div>
   );
