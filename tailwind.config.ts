@@ -8,6 +8,7 @@ module.exports = {
         starlight: {
           blue: "#173967",
           yellow: "#FFE899",
+          border: "#DBDDE1",
         },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

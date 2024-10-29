@@ -3,15 +3,16 @@ import { Label } from "@/components/ui/label";
 import { TextInput } from "@/types/questions";
 
 const Input = ({ meta }: { meta: TextInput }) => {
-  const { title, placeholder, value, type } = meta;
+  const { title, placeholder, value, type, disabled } = meta;
 
   return (
-    <div className="grid w-full max-w-sm items-center gap-3">
+    <div className="grid w-full items-center gap-3">
       <Label htmlFor={title}>{title}</Label>
       <ShadCNInput
         type={type}
         id={title}
         placeholder={placeholder}
+        disabled={disabled}
         value={value}
       />
     </div>
