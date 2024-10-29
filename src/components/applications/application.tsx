@@ -4,7 +4,7 @@ import Textarea from "@/components/global/inputs/textarea";
 import Select from "@/components/global/inputs/select";
 import Text from "@/components/global/inputs/text";
 import { Questions } from "@/types/questions";
-import InputWithLabel from "@/components/global/inputs/input";
+import Input from "@/components/global/inputs/input";
 
 interface props {
   title: string;
@@ -27,7 +27,7 @@ const Application = ({ title, questions }: props) => {
         }}
       />
 
-      <InputWithLabel
+      <Input
         meta={{
           title: "Email",
           placeholder: "Enter your email",
