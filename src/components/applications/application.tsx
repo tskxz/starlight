@@ -4,6 +4,7 @@ import Textarea from "@/components/global/inputs/textarea";
 import Select from "@/components/global/inputs/select";
 import Text from "@/components/global/inputs/text";
 import { Questions } from "@/types/questions";
+import Input from "@/components/global/inputs/input";
 
 interface props {
   title: string;
@@ -26,14 +27,14 @@ const Application = ({ title, questions }: props) => {
         }}
       />
 
-      <Text
+      <Input
         meta={{
-          type: "text",
           title: "Email",
-          placeholder: "Enter an Email",
+          placeholder: "Enter your email",
+          value: "",
+          type: "text",
           maxLength: 250,
-          value: "SAMPLE EMAIL",
-          disabled: true,
+          disabled: false,
         }}
       />
 

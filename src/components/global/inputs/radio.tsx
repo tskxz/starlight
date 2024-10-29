@@ -4,6 +4,7 @@ import { useState } from "react";
 import { RadioInput } from "@/types/questions";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import Button from "../button";
 
 const Radio = ({ meta }: { meta: RadioInput }) => {
   const { title, options } = meta;
@@ -13,7 +14,7 @@ const Radio = ({ meta }: { meta: RadioInput }) => {
     <div>
       <Label>{title}</Label>
       <RadioGroup
-        defaultValue="option-one"
+        defaultValue=""
         value={String(selected)}
         className="flex flex-row space-x-4"
       >
@@ -27,8 +28,9 @@ const Radio = ({ meta }: { meta: RadioInput }) => {
               value={String(option)}
               id={`option-${option}`}
               className="hidden"
-            />
-            <Label htmlFor={`option-${option}`}>{option}</Label>
+            >
+              <Button>{option}</Button>
+            </RadioGroupItem>
           </div>
         ))}
       </RadioGroup>
