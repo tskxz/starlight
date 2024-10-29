@@ -9,7 +9,9 @@ const Select = ({ meta }: { meta: SelectInput }) => {
       {title}
 
       {options.map((option, index) => (
-        <Button key={index}>{option}</Button>
+        <Button key={index} onClick={() => {}}>
+          {option}
+        </Button>
       ))}
     </div>
   );

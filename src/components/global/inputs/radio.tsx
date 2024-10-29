@@ -8,7 +8,9 @@ const Radio = ({ meta }: { meta: RadioInput }) => {
     <div>
       <p>{title}</p>
       {options.map((option, index) => (
-        <Button key={index}>{option}</Button>
+        <Button key={index} onClick={() => {}}>
+          {option}
+        </Button>
       ))}
     </div>
   );

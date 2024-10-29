@@ -46,7 +46,7 @@ const Application = ({ title, questions }: props) => {
         if (type === "select") return <Select meta={question} key={index} />;
       })}
 
-      <Button>Submit</Button>
+      <Button onClick={() => {}}>Submit</Button>
     </div>
   );
 };

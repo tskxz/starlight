@@ -40,7 +40,7 @@ const Page = ({ params }: props) => {
         }}
       />
 
-      <Button>Submit</Button>
+      <Button onClick={() => {}}>Submit</Button>
     </div>
   );
 };
