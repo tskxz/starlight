@@ -6,7 +6,7 @@ import { questions } from "@/data/profile/information";
 
 const Information = () => {
   return (
-    <div className="border-starlight-gray flex h-1/2 flex-col gap-4 rounded-xl border-2 p-8">
+    <div className="flex h-1/2 flex-col gap-4 rounded-xl border-2 border-starlight-gray p-8">
       {questions.map((question, index) => {
         const { type } = question;
 
