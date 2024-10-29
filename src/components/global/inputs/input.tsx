@@ -9,7 +9,7 @@ const Input = ({ meta }: { meta: TextInput }) => {
     <div className="grid w-full max-w-sm items-center gap-3">
       <Label htmlFor={title}>{title}</Label>
       <ShadCNInput
-        type="email"
+        type="text"
         id={title}
         placeholder={placeholder}
         value={value}
