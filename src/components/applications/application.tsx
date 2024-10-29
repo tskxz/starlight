@@ -4,7 +4,6 @@ import Button from "@/components/global/button";
 import Radio from "@/components/global/inputs/radio";
 import Textarea from "@/components/global/inputs/textarea";
 import Select from "@/components/global/inputs/select";
-import Text from "@/components/global/inputs/text";
 import { Questions } from "@/types/questions";
 import Input from "@/components/global/inputs/input";
 
@@ -18,7 +17,7 @@ const Application = ({ title, questions }: props) => {
     <div className="rounded-md border-2 border-black">
       <p>Apply to {title}</p>
 
-      <Text
+      <Input
         meta={{
           type: "text",
           title: "Name",
