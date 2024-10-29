@@ -1,3 +1,5 @@
+"use client";
+
 import Button from "@/components/global/button";
 import Radio from "@/components/global/inputs/radio";
 import Textarea from "@/components/global/inputs/textarea";
@@ -47,7 +49,7 @@ const Application = ({ title, questions }: props) => {
         if (type === "select") return <Select meta={question} key={index} />;
       })}
 
-      <Button>Submit</Button>
+      <Button onClick={() => {}}>Submit</Button>
     </div>
   );
 };
